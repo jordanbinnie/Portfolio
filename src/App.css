@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #2c2c2c;
+  --secondary-color: #ffffff;
+  --button-color: #ffffff;
+  --main-bg-color: #f2f6f9;
+  --secondary-bg-color: #ffffff;
+  --third-bg-color: #2c2c2c;
+  --nav-bg-color: #e5e9ed;
+  --nav-hover-bg-color: #ffffff;
+  --project-nav-hover-bg-color: #2c2c2c;
+  --boxshadow-color: 255 255 255;
+  --black-bg-color: #2c2c2c;
+  --placeholder-bg-color: #fafafa;
+  --white-bg-color: #ffffff;
+  --wordle-module-bg-color: #f2f6f9;
+  --grid-box-shadow-color: 90, 90, 90, 0.04;
+  --project-image-box-shadow-color: 0 0 0 / 9%;
+  --wordle-secondary-bg-color: #444444;
+  --wordle-layer-bg-color: 255, 255, 255;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  transition: all 500ms ease-in-out 0s;
+  color: var(--main-color);
+}
+
+.heading {
+  letter-spacing: 0.5px;
+  line-height: 1.32;
+  font-weight: 700;
+}
+
+.heading--extraLarge {
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.heading--subHeading {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.heading--1 {
+  font-size: 32px;
+}
+
+.heading--2 {
+  font-size: 24px;
+}
+
+.heading--3 {
+  font-size: 16px;
+}
+
+.paragraph--subHeading {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.paragraph--1 {
+  font-size: 16px;
+}
+
+.paragraph--2 {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.paragraph--3 {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.paragraph {
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.button {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background-color: var(--button-color);
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.2s ease-out 0s;
+  color: var(--main-color);
+}
+
+.button:hover {
+  box-shadow: rgb(var(--boxshadow-color) / 50%) 0px 0px 0px 6px;
+}
+
+@media only screen and (max-width: 920px) {
+  .button {
+    padding: 7.5px 15px;
+    left: 10px;
+    bottom: 10px;
+  }
+  .heading--extraLarge {
+    font-size: 28px;
+  }
+  .heading--1 {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1320px) {
+  .button {
+    left: 10px;
+    bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 1320px) {
+  .button {
+    left: 15px;
+    bottom: 15px;
+  }
+}

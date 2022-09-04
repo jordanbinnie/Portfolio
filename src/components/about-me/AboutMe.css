@@ -1,0 +1,26 @@
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  color: var(--main-color);
+  border-radius: 30px;
+}
+
+.AboutMe_emoji {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: -100px;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .AboutMe_emoji {
+    left: auto;
+    right: 0;
+  }
+}

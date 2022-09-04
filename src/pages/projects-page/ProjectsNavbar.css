@@ -1,0 +1,113 @@
+.ProjectsPage_Navbar {
+  width: 273.36px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-bg-color);
+  border-radius: 30px;
+  position: fixed;
+  z-index: 50000;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.2s ease-out 0s;
+}
+
+.ProjectsPage_NavBar_item_hover-bg {
+  width: 38px;
+  height: 38px;
+  background-color: var(--project-nav-hover-bg-color);
+  border-radius: 30px;
+  position: absolute;
+  left: 117.671875px;
+  box-shadow: 0 0 0 1.5px var(--project-nav-hover-bg-color);
+}
+
+.ProjectsPage_Navbar_item {
+  background-color: transparent;
+  border-radius: 30px;
+  margin: 5px;
+  z-index: 1;
+  cursor: pointer;
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 100px;
+}
+
+.ProjectsPage_Navbar_item-icon {
+  width: 16px;
+  height: 16px;
+  z-index: 1;
+  border-radius: 100px;
+}
+
+.nav-cross .ProjectsPage_Navbar_item-icon {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  fill: #ffffff;
+}
+
+.ProjectsPage_Navbar_item.nav-arrow {
+  background-color: #ffffff;
+}
+
+.ProjectsPage_Navbar_item.nav-cross {
+  background-color: #ffffff;
+}
+
+.ProjectsPage_NavBar_item_hover-bg {
+  transition: all 500ms ease-in-out 0s;
+}
+
+.icon--left-arrow {
+  transition-delay: 0.1s;
+  width: 100%;
+  padding: 11px;
+  height: 100%;
+  fill: #2c2c2c;
+}
+.icon--left-arrow:hover {
+  transition-delay: 0.4s;
+  fill: #ffffff;
+}
+.icon--right-arrow {
+  transition-delay: 0.1s;
+  width: 100%;
+  padding: 11px;
+  height: 100%;
+  fill: #2c2c2c;
+}
+.icon--right-arrow:hover {
+  transition-delay: 0.4s;
+  fill: #ffffff;
+}
+
+@media only screen and (max-width: 920px) {
+  .ProjectsPage_Navbar {
+    bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1320px) {
+  .ProjectsPage_Navbar {
+    bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1320px) {
+  .ProjectsPage_Navbar {
+    bottom: 30px;
+  }
+}
+
+@media only screen and (min-height: 1320px) and (min-width: 1320px) {
+  .ProjectsPage_Navbar {
+    bottom: 40px;
+  }
+}

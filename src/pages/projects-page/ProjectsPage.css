@@ -1,0 +1,631 @@
+:root {
+  --image-position: 112px;
+}
+
+.ProjectsPage {
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.ProjectsPage_content {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: default;
+}
+
+.ProjectsPage_button {
+  background-color: #2c2c2c;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.2s ease-out 0s;
+  color: #ffffff;
+}
+
+.ProjectsPage .button-container {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  border-radius: 30px;
+  border: none;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.2s ease-out 0s;
+  color: var(--main-color);
+}
+
+.ProjectsPage_button:hover {
+  box-shadow: rgb(0 0 0 / 50%) 0px 0px 0px 6px;
+}
+
+.ProjectsPage_button--new {
+  top: 15px;
+  bottom: auto;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 3px var(--third-bg-color);
+  color: var(--main-color);
+  cursor: default;
+  transition: all 500ms ease-in-out 0s;
+}
+
+.ProjectsPage_button--new:hover {
+  box-shadow: inset 0 0 0 3px #2c2c2c;
+}
+
+.ProjectsPage .button--demo {
+  text-decoration: underline;
+  margin-left: 10px;
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+.ProjectsPage .button--demo:hover {
+  box-shadow: none;
+}
+
+.ProjectsPage .button--demo_unavailable {
+  margin-left: 10px;
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+.ProjectsPage .button--demo_unavailable:hover {
+  box-shadow: none;
+}
+
+.ProjectsPage_paragraph {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ProjectsPage_content--left {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ProjectsPage_content--right {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ProjectsPage_content--right_image {
+  width: 100%;
+  pointer-events: none;
+  filter: drop-shadow(0px 20px 10px rgb(0, 0, 0, 0.4));
+}
+
+.ProjectsPage_content--right_image_wordle {
+  height: 100%;
+  width: fit-content;
+  pointer-events: none;
+  filter: drop-shadow(0px 20px 10px rgb(0, 0, 0, 0.4));
+  margin: 0 auto;
+}
+
+.ProjectsPage_grid {
+  position: relative;
+}
+
+.ProjectsPage_grid .GridItemContent {
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.grid-image {
+  padding: 50px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-image > img {
+  width: 100%;
+  pointer-events: none;
+}
+
+.grid-image_desktop {
+  width: 100%;
+}
+
+.grid-image_phone {
+  height: 100%;
+  width: auto;
+}
+
+.ProjectsPage .WordleProject_pop-out {
+  z-index: 1;
+}
+
+.ProjectsPage .top-right.WordleProject_button {
+  z-index: 2;
+}
+
+.ProjectsPage .WordleProject_button:not(.top-right.WordleProject_button) {
+  display: none;
+}
+
+/* Cryptofy images css */
+#IMAGE_coin-table {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: calc(100% - 100px);
+  border-radius: 15px;
+  box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+  transition: all 500ms ease-in-out 0s;
+  animation: none !important;
+}
+
+#IMAGE_coin-graph {
+  position: absolute;
+  left: 150px;
+  bottom: 50px;
+  width: calc(100% - 200px);
+  z-index: -2;
+  border-radius: 15px;
+  box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+  transition: all 500ms ease-in-out 0s;
+  animation: none !important;
+}
+
+#ProjectGrid_photo4:hover #IMAGE_coin-table {
+  top: 280px;
+  left: 150px;
+  width: calc(100% - 200px);
+  z-index: -2;
+}
+
+#ProjectGrid_photo4:hover #IMAGE_coin-graph {
+  bottom: 300px;
+  left: 50px;
+  width: calc(100% - 100px);
+  z-index: inherit;
+}
+
+#IMAGE_news-panel {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+  transition: all 500ms ease-in-out 0s;
+  max-height: 100%;
+}
+
+.cryptofy_image-widgets {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#IMAGE_coin-widget {
+  z-index: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+  transition: all 250ms ease-in-out 0s;
+}
+
+#IMAGE_price-widget {
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+  transition: all 250ms ease-in-out 0s;
+}
+
+#IMAGE_change-widget {
+  z-index: 2;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+  transition: all 250ms ease-in-out 0s;
+}
+
+#IMAGE_coin-widget:hover {
+  z-index: 3;
+}
+
+#IMAGE_price-widget:hover {
+  z-index: 3;
+}
+
+/* Flick messenger images css */
+
+#IMAGE_chat-screen {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+  transition: all 500ms ease-in-out 0s;
+}
+#IMAGE_full-screen {
+  position: absolute;
+  left: 50px;
+  height: calc(100% - 100px);
+  width: fit-content;
+  border-radius: 15px;
+  box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+  transition: all 500ms ease-in-out 0s;
+  z-index: 1;
+  visibility: visible;
+  animation: none;
+}
+
+#IMAGE_full-screen-dark {
+  position: absolute;
+  left: 112px;
+  height: calc(100% - 100px);
+  width: fit-content;
+  border-radius: 15px;
+  box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+  transition: all 500ms ease-in-out 0s;
+  z-index: 0;
+  visibility: visible;
+  animation: none;
+}
+
+.flick_color-swatch {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+  z-index: 3;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.flick-swatch {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 3px solid #2c2c2c;
+  border-radius: 100px;
+  position: relative;
+}
+.flick-swatch_bg-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  position: relative;
+}
+.flick-swatch-bg {
+  position: absolute;
+  height: 100%;
+  width: calc(50% + 1px);
+  left: 12px;
+  background-color: #2c2c2c;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  transition: all 500ms ease-in-out 0s;
+}
+
+#IMAGE_liked-message {
+  filter: drop-shadow(0px 0px 10px rgb(0, 0, 0, 0.4));
+}
+
+/* Wordle images css */
+.wordle_image-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#IMAGE_game-won {
+  border-radius: 30px;
+  box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+  position: absolute;
+  height: 100%;
+  width: auto;
+  left: 0;
+  top: 0;
+  transition: all 500ms ease-in-out 0s;
+}
+
+#IMAGE_game-lost {
+  border-radius: 30px;
+  box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+  position: absolute;
+  height: calc(100% - 100px);
+  top: 50px;
+  width: auto;
+  right: 0px;
+  transition: all 500ms ease-in-out 0s;
+}
+
+#ProjectGrid_photo4:hover #IMAGE_game-won {
+  height: calc(100% - 100px);
+  top: 50px;
+}
+#ProjectGrid_photo4:hover #IMAGE_game-lost {
+  height: 100%;
+  top: 0px;
+}
+
+#IMAGE_pop-up {
+  filter: drop-shadow(0px 0px 10px rgba(var(--project-image-box-shadow-color)));
+}
+
+/* Portfolio images css */
+#IMAGE_home-page {
+  border-radius: 15px;
+  box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+  transition: all 500ms ease-in-out 0s;
+}
+
+.ProjectsPage .ThemeMode {
+  background-color: #2c2c2c;
+}
+.ProjectsPage .ThemeMode_toggler {
+  background-color: #444444;
+}
+.ProjectsPage .GitHub {
+  background-color: #2c2c2c;
+}
+.ProjectsPage .GitHub .button {
+  background-color: var(--secondary-bg-color);
+  color: var(--main-color);
+}
+.ProjectsPage .LinkedIn .button {
+  background-color: var(--secondary-bg-color);
+}
+
+@media only screen and (max-width: 920px) {
+  .ProjectsPage {
+    max-width: 375px;
+    margin-bottom: 100px;
+    align-items: center;
+  }
+  .ProjectsPage_content {
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ProjectsPage_content--left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ProjectsPage #ProjectGrid_photo4 .GridItemContent {
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* cryptofy images */
+  #IMAGE_coin-widget {
+    border-radius: 25px;
+  }
+  #IMAGE_price-widget {
+    top: 65px;
+    border-radius: 25px;
+  }
+  #IMAGE_change-widget {
+    top: 140px;
+    border-radius: 25px;
+  }
+  #IMAGE_coin-table {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    top: auto;
+    width: calc(100% - 100px);
+    border-radius: 15px;
+    box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+    transition: all 500ms ease-in-out 0s;
+    animation: none !important;
+  }
+  #IMAGE_coin-graph {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    bottom: auto;
+    width: calc(100% - 100px);
+    z-index: -2;
+    border-radius: 15px;
+    box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+    transition: all 500ms ease-in-out 0s;
+    animation: none !important;
+  }
+  #ProjectGrid_photo4:hover #IMAGE_coin-table {
+    top: auto;
+    left: 50px;
+    width: calc(100% - 100px);
+    z-index: -2;
+  }
+
+  #ProjectGrid_photo4:hover #IMAGE_coin-graph {
+    bottom: auto;
+    left: 50px;
+    width: calc(100% - 100px);
+    z-index: inherit;
+  }
+
+  /* wordle images */
+
+  #IMAGE_game-won {
+    border-radius: 30px;
+    box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+    position: absolute;
+    height: 100%;
+    width: auto;
+    left: 0;
+    top: 0;
+    transition: all 500ms ease-in-out 0s;
+  }
+
+  #IMAGE_game-lost {
+    border-radius: 30px;
+    box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    width: auto;
+    right: 0px;
+    transition: all 500ms ease-in-out 0s;
+    z-index: -1;
+  }
+
+  #ProjectGrid_photo4:hover #IMAGE_game-won {
+    height: 100%;
+    top: 0px;
+    left: 40px;
+  }
+  #ProjectGrid_photo4:hover #IMAGE_game-lost {
+    height: 100%;
+    top: 0px;
+    right: 40px;
+    z-index: 1;
+  }
+
+  /* flick images */
+
+  #IMAGE_full-screen {
+    position: absolute;
+    left: 50px;
+    height: auto;
+    width: calc(100% - 100px);
+    border-radius: 15px;
+    box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+    transition: all 500ms ease-in-out 0s;
+    z-index: 1;
+    animation: none;
+  }
+
+  #IMAGE_full-screen-dark {
+    position: absolute;
+    left: 50px;
+    height: auto;
+    width: calc(100% - 100px);
+    border-radius: 17px;
+    box-shadow: rgb(var(--project-image-box-shadow-color)) 0px 2px 24px 0px;
+    transition: all 500ms ease-in-out 0s;
+    z-index: 0;
+    animation: none;
+  }
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1320px) {
+  .ProjectsPage {
+    max-width: 800px;
+    margin-bottom: 100px;
+  }
+  #IMAGE_full-screen-dark {
+    left: 140px;
+  }
+  :root {
+    --image-position: 135px;
+  }
+  #ProjectGrid_photo4:hover #IMAGE_coin-table {
+    top: 350px;
+  }
+  #ProjectGrid_photo4:hover #IMAGE_coin-graph {
+    bottom: 420px;
+  }
+  #IMAGE_coin-widget {
+    border-radius: 30px;
+  }
+  #IMAGE_price-widget {
+    top: 75px;
+    border-radius: 30px;
+  }
+  #IMAGE_change-widget {
+    top: 150px;
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (min-width: 1320px) {
+  .ProjectsPage {
+    max-width: 1200px;
+    margin-bottom: 100px;
+  }
+}
+
+@keyframes swapSwatch1 {
+  0% {
+    left: 50px;
+    z-index: 1;
+  }
+  50% {
+    left: -150px;
+  }
+  100% {
+    left: var(--image-position);
+    z-index: 0;
+  }
+}
+
+@keyframes swapSwatch2 {
+  0% {
+    left: 112px;
+    z-index: 0;
+  }
+
+  50% {
+    left: 312px;
+  }
+
+  100% {
+    left: 50px;
+    z-index: 1;
+  }
+}
+
+@keyframes swapSwatchPhone1 {
+  0% {
+    left: 50px;
+    z-index: 1;
+    visibility: visible;
+  }
+  50% {
+    left: -100px;
+  }
+  100% {
+    left: 50px;
+    z-index: 0;
+    visibility: visible;
+  }
+}
+
+@keyframes swapSwatchPhone2 {
+  0% {
+    left: 50px;
+    z-index: 0;
+    visibility: visible;
+  }
+
+  50% {
+    left: 200px;
+  }
+
+  100% {
+    left: 50px;
+    z-index: 1;
+    visibility: visible;
+  }
+}

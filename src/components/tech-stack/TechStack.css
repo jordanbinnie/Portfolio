@@ -1,0 +1,56 @@
+:root {
+  --this-color: linear-gradient(45deg, #f598a8, #f6edb2);
+}
+
+.TechStack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  color: var(--main-color);
+  border-radius: 30px;
+  position: relative;
+}
+
+.TechStack_items {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  position: relative;
+}
+
+.TechStack_items_row {
+  width: 100%;
+  display: flex;
+}
+
+.TechStack_item {
+  display: flex;
+  padding: 3px;
+  margin: 5px;
+  border-radius: 100px;
+  transition: 0.2s ease-out 0s;
+  background: linear-gradient(45deg, #f598a8, #f6edb2);
+}
+
+.TechStack_item:first-child {
+  margin-left: 0;
+}
+
+.TechStack_item_text {
+  text-decoration: none;
+  border-radius: 100px;
+  color: var(--main-color);
+  background: var(--button-color);
+  transition: 0.2s ease-out 0s;
+  padding: 4px 14px;
+}
+
+@media only screen and (max-width: 1320px) {
+  .TechStack_item_text {
+    padding: 3px 9px;
+  }
+}

@@ -1,0 +1,29 @@
+.MessengerProject {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  border-radius: 30px;
+  overflow: hidden;
+  background: #212531;
+  background: linear-gradient(
+    to right bottom,
+    #a2d2ff 50%,
+    var(--black-bg-color) 50%
+  );
+}
+
+.MessengerProject_image {
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 60px;
+  transition: all 500ms ease-in-out 0s;
+  pointer-events: none;
+  transform: rotate3d(1, 1, 1, -30deg);
+  border-radius: 15px;
+}
+
+.MessengerProject:hover .MessengerProject_image {
+  transform: translate3d(-205px, 0, 0);
+  margin-top: 90px;
+}

@@ -1,0 +1,63 @@
+.grid {
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.GridItemWrapper {
+  background: var(--secondary-bg-color);
+  transition: all 500ms ease 0s;
+  border-radius: 30px;
+  cursor: grab;
+  box-shadow: rgba(var(--grid-box-shadow-color)) 5px 10px 10px;
+  opacity: 1;
+}
+
+.GridItemWrapper:active {
+  cursor: grabbing;
+  z-index: 2;
+  transition: none;
+}
+
+.GridItemWrapper#Grid_about-me {
+  z-index: 1;
+}
+
+.GridItemWrapper#Grid_wordle-project {
+  background: var(--secondary-bg-color);
+}
+
+.GridItemContent {
+  width: 100%;
+  height: 100%;
+}
+
+.react-grid-item.react-grid-placeholder {
+  background-color: var(--placeholder-bg-color);
+  z-index: -1;
+  border-radius: 30px;
+}
+
+.widgetNotActive {
+  opacity: 0.3;
+}
+
+@media only screen and (max-width: 920px) {
+  .grid {
+    max-width: 375px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .grid {
+    max-width: 800px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1320px) {
+  .grid {
+    max-width: 1200px;
+  }
+}
