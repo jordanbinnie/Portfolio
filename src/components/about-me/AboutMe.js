@@ -12,7 +12,7 @@ function AboutMe() {
         </div>
         <p className="paragraph paragraph--1">
             I am a 
-            <span className="heading heading--3"> Front End Developer,</span>
+            <span className="heading heading--3"> Front End Developer</span>
             <br/>
             based in Auckland, New Zealand.
             <br/>

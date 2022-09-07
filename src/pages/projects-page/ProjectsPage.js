@@ -185,7 +185,7 @@ function ProjectsPage() {
     const messenger = {
         heading: "Flick.",
         subHeading: "The only messenging platform you will need.",
-        description: "1 on 1 messaging platform powered by fireabse as a backend. Supports both text and image types, as well as having the functionality to like messages. Clean and swift design. ",
+        description: "1 on 1 messaging platform powered by Firebase as a backend. Supports both text and image types, as well as having the functionality to like messages. Clean and swift design. ",
         stack: <div className="TechStack_items_row ProjectsPage_tech-stack">
                     <div className="TechStack_item"><span className="TechStack_item_text paragraph paragraph--2">Next.JS</span></div>
                     <div className="TechStack_item"><span className="TechStack_item_text paragraph paragraph--2">{width < 920 ? "Javascript" : "Vanilla Javascript"}</span></div>
@@ -238,7 +238,7 @@ function ProjectsPage() {
     const wordle = {
         heading: "Wordle",
         subHeading: "Go on. Give it a try.",
-        description: "Inspired by the internet famous word puzzle called Wordle. Created my own version using a custom hook method with React. A new word is generated on every reload/game restart. Custom CSS animations were used to create a more interactive user experience.",
+        description: "Inspired by the internet famous word puzzle called Wordle. Created my own version using a custom hook method with React.js. A new word is generated on every reload/game restart. Custom CSS animations were used to create a more interactive user experience.",
         stack: <div className="TechStack_items_row ProjectsPage_tech-stack">
                     <div className="TechStack_item"><span className="TechStack_item_text paragraph paragraph--2">React</span></div>
                     <div className="TechStack_item"><span className="TechStack_item_text paragraph paragraph--2">{width < 920 ? "Javascript" : "Vanilla Javascript"}</span></div>
@@ -257,7 +257,7 @@ function ProjectsPage() {
     const portfolio = {
         heading: "Portfolio",
         subHeading: "Modern and unique design.",
-        description: "The purpose of this portfolio was to create a very unique and interactive experience for the user, whilst displaying my current work and projects. I was inspired by Apples IOS widgets. I aimed for the perfect balance between beautiful UI and UX design. The draggable grid elements are powered by React Grid Layout. This helped create more of a interactive and IOS feel.",
+        description: "The purpose of this portfolio was to create a very unique and interactive experience for the user, whilst displaying my current work and projects. I was inspired by Apple's IOS widgets. I aimed for a perfect balance between solid UI and UX design. The draggable grid elements are powered by React Grid Layout. This helped create more of a interactive and IOS feel.",
         stack: <div className="TechStack_items_row ProjectsPage_tech-stack">
                     <div className="TechStack_item"><span className="TechStack_item_text paragraph paragraph--2">React</span></div>
                     <div className="TechStack_item"><span className="TechStack_item_text paragraph paragraph--2">{width < 920 ? "Javascript" : "Vanilla Javascript"}</span></div>
