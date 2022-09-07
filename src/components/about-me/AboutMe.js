@@ -20,7 +20,7 @@ function AboutMe() {
             I also have a strong passion for coding and solid UI/UX design.
         </p>
         <img className="AboutMe_emoji" src={emoji}/>
-        <a href="https://www.dropbox.com/s/a3d83nptdfp97ex/Jordan%20Binnie.pdf?dl=0" target="_blank"><button className="button resume-button paragraph--2">Resume</button></a>
+        <a href="https://www.dropbox.com/s/g98lqp33ca2km8m/Jordan%20Binnie.pdf?dl=0" target="_blank"><button className="button resume-button paragraph--2">Resume</button></a>
     </div>
   )
 }
