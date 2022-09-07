@@ -7,6 +7,9 @@
 ## Introduction
 
 The purpose of this portfolio was to create a very unique and interactive experience for the user, whilst displaying my current work and projects. 
+
 I was inspired by Apples IOS widgets. 
+
 I aimed for the perfect balance between beautiful UI and UX design. 
+
 The draggable grid elements are powered by React Grid Layout. This helped create more of a interactive and IOS feel.
