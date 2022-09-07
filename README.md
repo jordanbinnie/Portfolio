@@ -8,7 +8,7 @@
 
 The purpose of this portfolio was to create a very unique and interactive experience for the user, whilst displaying my current work and projects. 
 
-I was inspired by Apples IOS widgets. 
+I was inspired by Apple's IOS widgets. 
 
 I aimed for a perfect balance between solid UI and UX design. 
 
