@@ -1,6 +1,6 @@
 # Portfolio
 
-### [Live Site](https://jordanbinnie.com)
+### [Live Site](https://www.jordanbinnie.com)
 
 ![portfolio-mockup](https://user-images.githubusercontent.com/110155852/189001381-ada69b51-8db6-4dfb-bca8-823abf8266b1.png)
 
